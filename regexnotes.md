@@ -5,7 +5,7 @@
 Use all with the appropriate flags/modifiers, word bounderies, and ^...$
 I mention that a few examples "... are valid", are really just a few examples
 
-## Contents
+## Table of Contents
 1.[Phone Numbers](#phone-numbers)
 
 ## Phone Numbers
