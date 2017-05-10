@@ -75,12 +75,12 @@ Of course replace <timeregex> with the relevant time regex you see below or what
 
 ## Other
 
-#### Digits replace <n> with a number, for example: [0-9]{4}
+#### Digits, replace `<n>` with a number, for example: [0-9]{4}
 ```
 [0-9]{<n>}
 ```
 
-#### Floats <bit-precision> should be replaced with 2,4,8,16,32,64,128,256, or whatever number you please
+#### Floats, `<bit-precision>` should be replaced with 2,4,8,16,32,64,128,256, or whatever number you please
 ```
 [0-9]+(?:\.[0-9]{1,<bit-precision>})?
 ```
