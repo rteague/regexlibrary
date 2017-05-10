@@ -7,7 +7,9 @@ I mention that a few examples "... are valid", are really just a few examples
 
 ## Phone Numbers
 ### phone number 1 non-country code, U.S.
+```
 (?:1(?: |-)?)?(\(?[0-9]{3}\)?)(?:-| )?([0-9]{3})-([0-9]{4})
+```
 # phone number match 2
 1?[1-9][0-9]{9}
 
@@ -53,10 +55,10 @@ Refer to ISO 8601 for the time formats below
 
 ## Other
 
-## Digits replace <n> with a number, for example: [0-9]{4}
+### Digits replace <n> with a number, for example: [0-9]{4}
 [0-9]{<n>}
 
-## Floats <bit-precision> should be replaced with 2,4,8,16,32,64,128,256, or whatever number you please
+### Floats <bit-precision> should be replaced with 2,4,8,16,32,64,128,256, or whatever number you please
 [0-9]+(?:\.[0-9]{1,<bit-precision>})?
 
 
