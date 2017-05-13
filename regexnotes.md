@@ -26,7 +26,7 @@ I mention that a few examples "... are valid", are really just a few examples
 ```
 
 ## URLs
-**Common url - break down the third matching (/\S*)? group afterwards for further validation**
+**Common url, break down the third match group afterwards for further validation**
 ```
 https?://(?!\.|-)((?:\.?[-a-z0-9]+)+)(:[0-9]{1,5})?(/\S*)?
 ```
