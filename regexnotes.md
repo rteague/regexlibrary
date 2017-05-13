@@ -7,7 +7,6 @@ Use all with the appropriate flags/modifiers, word bounderies, and ^...$
 I mention that a few examples "... are valid", are really just a few examples
 
 ## Table of Contents
-* [Table of Contents](#table-of-contents)
 * [Phone Numbers](#phone-numbers)
 * [URLs](#urls)
 * [Email addresses](#email-addresses)
