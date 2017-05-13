@@ -42,11 +42,13 @@ https?://(?!\.|-)((?:\.?[-a-z0-9]+)+)(:[0-9]{1,5})?(/\S*)?
 ## Date Format
 **The most common date format in the U.S.; would match MM/DD/YYYY, or M/D/YY, or any combination of both; or MM/DD, or MM/YYYY. All forward slashes you see in the regex can be subsituted with dot '.' or dash '-' characters run true with this format: MM.DD.YYYY**
 
-**And you can of course swap the month and day group '()' positions in the regex for a DD/MM/YYYY format...**
+**And you can flip the month and day group '()' positions in the regex for a DD/MM/YYYY format...**
 ```
 \b(0(?=[1-9])[0-9]|[1-9]|1[02]?)(?:/(0(?=[1-9])[0-9]|3(?=[01])[01]|[12]?[0-9]))?/([0-9]{2,4}(?!/))\b
 ```
-**Common U.S. date format. Would match: Feb 30th 1987 or February 28th, 2000 or Feb 2220**
+**Common date format. Would match: Feb 30th 1987 or February 28th, 2000 or Feb 2220**
+
+**The day and month groups '()' can be flipped for the example date: 5 Aug 2017**
 ```
 \b(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)\b *(3(?=[01])[01]|[12]?[0-9])?(?:st|nd|rd|th)?,? *([0-9]{4})
 ```
@@ -57,9 +59,9 @@ https?://(?!\.|-)((?:\.?[-a-z0-9]+)+)(:[0-9]{1,5})?(/\S*)?
 ## Time Format
 Common time formats, the ones you are likely to see everyday for capturing time zones, you could open a file with a list of them or have an array in-code then format a string with a time format regular expression with timezones in a matching group.
 
-An example:<timeregex> ?(ET|CST|MT...)?
+An example:<timeregex> *(ET|CST|MT|...)?
 
-Of course replace <timeregex> with the relevant time regex you see below or whatever...
+Replace <timeregex> with the relevant time regex you see below or whatever...
 
 **time format: 12:00pm, 9:00 are valid**
 ```
@@ -73,19 +75,19 @@ Of course replace <timeregex> with the relevant time regex you see below or what
 
 **time format: 1459, 145952, 145952Z are valid**
 ```
-(2[0-4]|[0-1][0-9])([0-5][0-9])([0-6][0-9])? ?(Z|UTC)?
+^(2[0-4]|[01][0-9])([0-5][0-9])(60|[0-5][0-9])?(?: ?(Z|UTC))?$
 ```
 **time format: 1459+24, 145952-02:22, 145952+2259 are valid**
 ```
-(2[0-4]|[0-1][0-9])([0-5][0-9])([0-6][0-9])?((?:\+|-)(2[0-4]|[0-1][0-9])(:?[0-5][0-9])?)?
+(2[0-4]|[01][0-9])([0-5][0-9])([0-6][0-9])?((?:\+|-)(2[0-4]|[0-1][0-9])(:?[0-5][0-9])?)?
 ```
 **time format: 22:32:09, 09:00, 12:59:59Z, 06:00 UTC are valid**
 ```
-(2[0-4]|[0-1][0-9]):([0-5][0-9])(:[0-6][0-9])? ?(Z|UTC)?
+(2[0-4]|[01][0-9]):([0-5][0-9])(:(?:60|[0-5][0-9]))?(?: ?(Z|UTC))?
 ```
 **time format: 22:32:09+23, 09:00-1233 are valid**
 ```
-(2[0-4]|[0-1][0-9]):([0-5][0-9])(:[0-6][0-9])?((?:\+|-)(2[0-4]|[0-1][0-9])(:?[0-5][0-9])?)?
+(2[0-4]|[01][0-9]):([0-5][0-9])(:[0-6][0-9])?((?:\+|-)(2[0-4]|[0-1][0-9])(:?[0-5][0-9])?)?
 ```
 
 ## U.S. Currency
