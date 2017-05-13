@@ -1,12 +1,19 @@
 # Regex Reference
 **by Rashaud Teague**
 
-## NOTES&*()@!™¢∞§*&&^%!2#test%20tag-ha_ha99:
+**NOTES**
+
 Use all with the appropriate flags/modifiers, word bounderies, and ^...$
 I mention that a few examples "... are valid", are really just a few examples
 
 ## Table of Contents
-1.[Phone Numbers](#phone-numbers)
+..* [Phone Numbers](#phone-numbers)
+..* [URLs](#urls)
+..* [Email addresses](#email-addresses)
+..* [Date Format](#date-format)
+..* [Time Format](#time-format)
+..* [U.S. Currency](#us-currency)
+..* [Other](#other)
 
 ## Phone Numbers
 **phone number 1 non-country code, U.S.**
