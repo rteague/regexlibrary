@@ -8,15 +8,15 @@ I mention that a few examples "... are valid", are really just a few examples
 
 ## Table of Contents
 * [Chapter 1 Header](#chapter-1-header)
-....* [An odd section](#an-odd-section)
-...* [Chapter 1 Section](#chapter-1-section)
-....* [Chapter 1 Sub-section 1](#chapter-1-sub-section-1)
-....* [Chapter 1 Sub-section 2](#chapter-1-sub-section-2)
-.....* [Chapter 1 Sub-sub-section 1](#chapter-1-sub-sub-section-1)
+.* [An odd section](#an-odd-section)
+.* [Chapter 1 Section](#chapter-1-section)
+..* [Chapter 1 Sub-section 1](#chapter-1-sub-section-1)
+..* [Chapter 1 Sub-section 2](#chapter-1-sub-section-2)
+...* [Chapter 1 Sub-sub-section 1](#chapter-1-sub-sub-section-1)
 * [Chapter 2 Header](#chapter-2-header)
-...* [Chapter 2 Section](#chapter-2-section)
+.* [Chapter 2 Section](#chapter-2-section)
 * [Chapter 3 Header](#chapter-3-header)
-...* [Chapter 3 Section](#chapter-3-section)
+.* [Chapter 3 Section](#chapter-3-section)
 
 ## Phone Numbers
 **phone number 1 non-country code, U.S.**
