@@ -40,9 +40,9 @@ https?://(?!\.|-)((?:\.?[-a-z0-9]+)+)(:[0-9]{1,5})?(/\S*)?
 ```
 
 ## Date Format
-**The most common date format in the U.S.; would match MM/DD/YYYY, or M/D/YY, or any combination of both**
+**The most common date format in the U.S.; would match MM/DD/YYYY, or M/D/YY, or any combination of both. All forward slashes you see in the regex can be subsituted with dot characters run true with this format: MM.DD.YYYY**
 ```
-\b(0(?=[1-9])[0-9]|[1-9]|1[02]?)/(0(?=[1-9])[0-9]|3(?=[01])[01]|[12]?[0-9])/([0-9]{2,4})\b
+\b(0(?=[1-9])[0-9]|[1-9]|1[02]?)(?:/(0(?=[1-9])[0-9]|3(?=[01])[01]|[12]?[0-9]))?/([0-9]{2,4}(?!/))\b
 ```
 **Common U.S. date format. Would match: Feb 30th 1987 or February 28th, 2000 or Feb 2220**
 ```
