@@ -7,13 +7,13 @@ Use all with the appropriate flags/modifiers, word bounderies, and ^...$
 I mention that a few examples "... are valid", are really just a few examples
 
 ## Table of Contents
-..* [Phone Numbers](#phone-numbers)
-..* [URLs](#urls)
-..* [Email addresses](#email-addresses)
-..* [Date Format](#date-format)
-..* [Time Format](#time-format)
-..* [U.S. Currency](#us-currency)
-..* [Other](#other)
+* [Phone Numbers](#phone-numbers)
+* [URLs](#urls)
+* [Email addresses](#email-addresses)
+* [Date Format](#date-format)
+* [Time Format](#time-format)
+* [U.S. Currency](#us-currency)
+* [Other](#other)
 
 ## Phone Numbers
 **phone number 1 non-country code, U.S.**
