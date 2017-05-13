@@ -3,6 +3,8 @@
 
 **NOTES**
 
+First, this list will always be appended or updated...
+
 Use all with the appropriate flags/modifiers, word bounderies, and ^...$
 I mention that a few examples "... are valid", are really just a few examples
 
@@ -38,11 +40,18 @@ https?://(?!\.|-)((?:\.?[-a-z0-9]+)+)(:[0-9]{1,5})?(/\S*)?
 ```
 
 ## Date Format
-**Common U.S. date format. Would match: Feb 30th 1987 or February 28th, 2000 or Feb 2220 or Jan 66**
+**The most common date format in the U.S.; would match MM/DD/YYYY, or M/D/YY, or any combination of both
 ```
-\b(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)\b *(3(?=[01])[01]|[12]?[0-9])?(?:st|nd|rd|th)?,? *(?<![0-9])\b([0-9]{2,4})\b
+\b(0(?=[1-9])[0-9]|[1-9]|1[02]?)/(0(?=[1-9])[0-9]|3(?=[01])[01]|[12]?[0-9])/([0-9]{2,4})\b
 ```
-
+**Common U.S. date format. Would match: Feb 30th 1987 or February 28th, 2000 or Feb 2220**
+```
+\b(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)\b *(3(?=[01])[01]|[12]?[0-9])?(?:st|nd|rd|th)?,? *([0-9]{4})
+```
+**Same as above, but with just a 2-digit year
+```
+\b(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)\b *(3(?=[01])[01]|[12]?[0-9])?(?:st|nd|rd|th)?,? *([0-9]{2})
+```
 ## Time Format
 Common time formats, the ones you are likely to see everyday for capturing time zones, you could open a file with a list of them or have an array in-code then format a string with a time format regular expression with timezones in a matching group.
 
