@@ -38,6 +38,10 @@ https?://(?!\.|-)((?:\.?[-a-z0-9]+)+)(:[0-9]{1,5})?(/\S*)?
 ```
 
 ## Date Format
+**Common U.S. date format. Would match: Feb 30th 1987 or February 28th, 2000 or Feb 2220 or Jan 66**
+```
+\b(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)\b *(3(?=[01])[01]|[12]?[0-9])?(?:st|nd|rd|th)?,? *(?<![0-9])\b([0-9]{2,4})\b
+```
 
 ## Time Format
 Common time formats, the ones you are likely to see everyday for capturing time zones, you could open a file with a list of them or have an array in-code then format a string with a time format regular expression with timezones in a matching group.
@@ -48,11 +52,11 @@ Of course replace <timeregex> with the relevant time regex you see below or what
 
 **time format: 12:00pm, 9:00 are valid**
 ```
-(1[0-2]|[1-9]):([0-5][0-9])( ?[ap]m)?
+\b(1(?=[012])[012]|[1-9]):([0-5][0-9])( ?[ap]m)?
 ```
 **time format: 1230pm, 12pm are valid**
 ```
-(1[0-2]|[1-9])([0-5][0-9])?( ?[ap]m)
+\b(1(?=[012])[012]|[1-9])([0-5][0-9])?( ?[ap]m)
 ```
 *NOTE: Refer to ISO 8601 for the time formats below* 
 
@@ -74,9 +78,11 @@ Of course replace <timeregex> with the relevant time regex you see below or what
 ```
 
 ## U.S. Currency
+**No thousands separator**
 ```
 \$([0-9]+)(?:\.([0-9]{1,2}))?(k|m|b|t)?
 ```
+**With thousands separator**
 ```
 \$([0-9]{1,3})(?:(?:,?(?:[0-9]{3}))+)?(?:\.([0-9]{1,2}))?
 ```
