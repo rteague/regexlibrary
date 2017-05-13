@@ -40,7 +40,7 @@ https?://(?!\.|-)((?:\.?[-a-z0-9]+)+)(:[0-9]{1,5})?(/\S*)?
 ```
 
 ## Date Format
-**The most common date format in the U.S.; would match MM/DD/YYYY, or M/D/YY, or any combination of both
+**The most common date format in the U.S.; would match MM/DD/YYYY, or M/D/YY, or any combination of both**
 ```
 \b(0(?=[1-9])[0-9]|[1-9]|1[02]?)/(0(?=[1-9])[0-9]|3(?=[01])[01]|[12]?[0-9])/([0-9]{2,4})\b
 ```
