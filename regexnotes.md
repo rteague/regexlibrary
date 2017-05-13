@@ -47,7 +47,8 @@ Of course replace <timeregex> with the relevant time regex you see below or what
 ```
 (1[0-2]|[1-9])([0-5][0-9])?( ?[ap]m)
 ```
-*Refer to ISO 8601 for the time formats below* 
+*NOTE: Refer to ISO 8601 for the time formats below* 
+
 **time format: 1459, 145952, 145952Z are valid**
 ```
 (2[0-4]|[0-1][0-9])([0-5][0-9])([0-6][0-9])? ?(Z|UTC)?
