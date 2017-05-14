@@ -50,11 +50,9 @@ https?://([a-z][-a-z0-9]+(?:[-a-z0-9_]+[a-z0-9]\.)+[a-z][a-z0-9]+)(:\d{1,5})?(/\
 
 **The day and month groups '()' can be flipped for the example date: 5 Aug 2017**
 ```
-\b(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)\b *(3(?=[01])[01]|[12]?[0-9])?(?:st|nd|rd|th)?,? *([0-9]{4})
+\b(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)\b *(3[01]|[12]?[0-9])?(?:st|nd|rd|th)?,? *([0-9]{4})
 ```
-**Same as above, but with just a 2-digit year**
-```
-\b(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)\b *(3(?=[01])[01]|[12]?[0-9])?(?:st|nd|rd|th)?,? *([0-9]{2})
+
 ```
 ## Time Format
 Common time formats, the ones you are likely to see everyday for capturing time zones, you could open a file with a list of them or have an array in-code then format a string with a time format regular expression with timezones in a matching group.
@@ -65,11 +63,11 @@ Replace <timeregex> with the relevant time regex you see below or whatever...
 
 **time format: 12:00pm, 9:00 are valid**
 ```
-\b(1(?=[012])[012]|[1-9]):([0-5][0-9])( ?[ap]m)?
+\b(1[012]|[1-9]):([0-5][0-9])( ?[ap]m)?
 ```
 **time format: 1230pm, 12pm are valid**
 ```
-\b(1(?=[012])[012]|[1-9])([0-5][0-9])?( ?[ap]m)
+\b(1[012]|[1-9])([0-5][0-9])?( ?[ap]m)
 ```
 
 *NOTE: Refer to ISO 8601 for the time formats below* 
