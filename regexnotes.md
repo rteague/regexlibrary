@@ -84,7 +84,7 @@ Replace <timeregex> with the relevant time regex you see below or whatever...
 ## U.S. Currency
 **No thousands separator**
 ```
-\$([0-9]+)(?:\.([0-9]{1,2}))?(k|m|b|t)?
+\$(\d+)(?:\.(\d{1,2}))?(k|m|b|t)?
 ```
 **With thousands separator**
 ```
@@ -95,11 +95,11 @@ Replace <timeregex> with the relevant time regex you see below or whatever...
 
 **Digits, replace `<n>` with a number, for example: [0-9]{4}**
 ```
-[0-9]{<n>}
+\d{<n>}
 ```
 
 **Floats, `<bit-precision>` should be replaced with 2,4,8,16,32,64,128,256, or whatever number you please**
 ```
-[0-9]+(?:\.[0-9]{1,<bit-precision>})?
+\d+(?:\.\d{1,<bit-precision>})?
 ```
 
