@@ -86,7 +86,7 @@ Replace <timeregex> with the relevant time regex you see below or whatever...
 ```
 **With thousands separator**
 ```
-\$([0-9]{1,3})(?:(?:,?(?:[0-9]{3}))+)?(?:\.([0-9]{1,2}))?
+\$(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)
 ```
 
 ## Other
