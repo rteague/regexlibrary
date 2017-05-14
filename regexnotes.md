@@ -18,11 +18,11 @@ I mention that a few examples "... are valid", are really just a few examples
 * [Other](#other)
 
 ## Phone Numbers
-**phone number 1 non-country code, U.S.**
+**Phone number 1 non-country code, U.S.**
 ```
 (?:1(?: |-)?)?(\(?[0-9]{3}\)?)(?:-| )?([0-9]{3})-([0-9]{4})
 ```
-**phone number match 2**
+**Phone number match**
 ```
 1?[1-9][0-9]{9}
 ```
@@ -34,7 +34,7 @@ https?://(?!\.|-)((?:\.?[-a-z0-9]+)+)(:[0-9]{1,5})?(/\S*)?
 ```
 
 ## Email addresses
-**email address**
+**Email address**
 ```
 ([a-z0-9][-a-z0-9._+]+)@(?!\.|-)((?:\.?[-a-z0-9]+)+)
 ```
