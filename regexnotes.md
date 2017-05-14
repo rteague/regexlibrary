@@ -20,23 +20,23 @@ I mention that a few examples "... are valid", are really just a few examples
 ## Phone Numbers
 **Phone number 1 non-country code, U.S.**
 ```
-(?:1(?: |-)?)?(\(?[0-9]{3}\)?)(?:-| )?([0-9]{3})-([0-9]{4})
+(?:1(?: |-)?)?(\(?\d{3}\)?)(?:-| )?(\d{3})-(\d{4})
 ```
 **Phone number match**
 ```
-1?[1-9][0-9]{9}
+^1?[1-9]\d{9}$
 ```
 
 ## URLs
 **Common url, break down the third match group afterwards for further validation**
 ```
-https?://(?!\.|-)((?:\.?[-a-z0-9]+)+)(:[0-9]{1,5})?(/\S*)?
+(?<![^\s])https?://([a-z][-a-z0-9]+(?:[-a-z0-9_]+[a-z0-9]\.)+[a-z][a-z0-9]+)(:\d{1,5})?(/\S*)?(?![^\s])
 ```
 
 ## Email addresses
 **Email address**
 ```
-([a-z0-9][-a-z0-9._+]+)@(?!\.|-)((?:\.?[-a-z0-9]+)+)
+(?<![^\s])(\w[-a-z0-9_.+]+)@([a-z][-a-z0-9]+(?:[-a-z0-9_]+[a-z0-9]\.)+[a-z][a-z0-9]+)(?![^\s])
 ```
 
 ## Date Format
