@@ -30,13 +30,13 @@ I mention that a few examples "... are valid", are really just a few examples
 ## URLs
 **Common url, break down the third match group afterwards for further validation**
 ```
-(?<![^\s])https?://([a-z][-a-z0-9]+(?:[-a-z0-9_]+[a-z0-9]\.)+[a-z][a-z0-9]+)(:\d{1,5})?(/\S*)?(?![^\s])
+https?://([a-z][-a-z0-9]+(?:[-a-z0-9_]+[a-z0-9]\.)+[a-z][a-z0-9]+)(:\d{1,5})?(/\S*)?
 ```
 
 ## Email addresses
 **Email address**
 ```
-(?<![^\s])(\w[-a-z0-9_.+]+)@([a-z][-a-z0-9]+(?:[-a-z0-9_]+[a-z0-9]\.)+[a-z][a-z0-9]+)(?![^\s])
+(\w[-a-z0-9_.+]+)@([a-z][-a-z0-9]+(?:[-a-z0-9_]+[a-z0-9]\.)+[a-z][a-z0-9]+)
 ```
 
 ## Date Format
