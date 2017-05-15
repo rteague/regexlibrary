@@ -20,7 +20,7 @@ I mention that a few examples "... are valid", are really just a few examples
 ## Phone Numbers
 **Phone number 1 non-country code, U.S.**
 ```
-(?:1(?: |-)?)?(\(?\d{3}\)?)(?:-| )?(\d{3})-(\d{4})
+(?<![-+])(?:(\d{1,5})(?: |-))?(?:(\d{3})(?: |-)|\((\d{3})\) *)(\d{3})-(\d{4})(?![-\d])
 ```
 **Phone number match**
 ```
