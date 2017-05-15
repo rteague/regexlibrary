@@ -18,13 +18,9 @@ I mention that a few examples "... are valid", are really just a few examples
 * [Other](#other)
 
 ## Phone Numbers
-**Phone number 1 non-country code, U.S.**
+**Phone number match **
 ```
 (?<![-+])(?:(\d{1,5})(?: |-))?(?:(\d{3})(?: |-)|\((\d{3})\) ?)(\d{3})-(\d{4})(?![-\d])
-```
-**Phone number match**
-```
-^1?[1-9]\d{9}$
 ```
 
 ## URLs
