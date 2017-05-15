@@ -15,7 +15,7 @@ I mention that a few examples "... are valid", are really just a few examples
 * [Date Format](#date-format)
 * [Time Format](#time-format)
 * [U.S. Currency](#us-currency)
-* [Other](#other)
+* [Digits](#digits)
 
 ## Phone Numbers
 **Phone number match **
@@ -85,13 +85,7 @@ Replace <timeregex> with the relevant time regex you see below or whatever...
 \$(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)
 ```
 
-## Other
-
-**Digits, replace `<n>` with a number, for example: [0-9]{4}**
-```
-\d{<n>}
-```
-
+## Digits
 **Floats, `<bit-precision>` should be replaced with 2,4,8,16,32,64,128,256, or whatever number you please**
 ```
 \d+(?:\.\d{1,<bit-precision>})?
