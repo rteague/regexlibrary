@@ -88,6 +88,6 @@ Replace <timeregex> with the relevant time regex you see below or whatever...
 ## Digits
 **Floats, `<bit-precision>` should be replaced with 2,4,8,16,32,64,128,256, or whatever number you please**
 ```
-\d+(?:\.\d{1,<bit-precision>})?
+\d+(?:\.\d{1,2})
 ```
 
