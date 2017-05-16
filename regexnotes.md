@@ -3,10 +3,9 @@
 
 **NOTES**
 
-First, this list will always be appended or updated...
+**First, this list will always be appended or updated...**
 
-Use all with the appropriate flags/modifiers, word bounderies, and ^...$
-I mention that a few examples "... are valid", are really just a few examples
+**Use all with the appropriate flags/modifiers, word bounderies, and ^...$**
 
 ## Table of Contents
 * [Phone Numbers](#phone-numbers)
@@ -18,7 +17,7 @@ I mention that a few examples "... are valid", are really just a few examples
 * [Digits](#digits)
 
 ## Phone Numbers
-**Phone number match **
+**Phone number match**
 ```
 (?<![-+])(?:(\d{1,5})(?: |-))?(?:(\d{3})(?: |-)|\((\d{3})\) ?)(\d{3})-(\d{4})(?![-\d])
 ```
@@ -49,11 +48,11 @@ https?://([a-z][-a-z0-9]+(?:[-a-z0-9_]+[a-z0-9]\.)+[a-z][a-z0-9]+)(:\d{1,5})?(/\
 \b(Jan|January|Feb|February|Mar|March|Apr|April|May|Jun|June|Jul|July|Aug|August|Sep|September|Oct|October|Nov|November|Dec|December)\b *(3[01]|[12]?[0-9])?(?:st|nd|rd|th)?,? *([0-9]{4})
 ```
 ## Time Format
-Common time formats, the ones you are likely to see everyday for capturing time zones, you could open a file with a list of them or have an array in-code then format a string with a time format regular expression with timezones in a matching group.
+**Common time formats, the ones you are likely to see everyday for capturing time zones, you could open a file with a list of them or have an array in-code then format a string with a time format regular expression with timezones in a matching group.**
 
-An example:<timeregex> *(ET|CST|MT|...)?
+**An example:<timeregex> *(ET|CST|MT|...)?**
 
-Replace <timeregex> with the relevant time regex you see below or whatever...
+**Replace <timeregex> with the relevant time regex you see below or whatever...**
 
 **time format: 12:00pm, 9:00 are valid**
 ```
