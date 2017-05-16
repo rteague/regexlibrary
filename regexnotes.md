@@ -50,7 +50,7 @@ https?://([a-z][-a-z0-9]+(?:[-a-z0-9_]+[a-z0-9]\.)+[a-z][a-z0-9]+)(:\d{1,5})?(/\
 ## Time Format
 **Common time formats, the ones you are likely to see everyday for capturing time zones, you could open a file with a list of them or have an array in-code then format a string with a time format regular expression with timezones in a matching group.**
 
-**An example:<timeregex> *(ET|CST|MT|...)?**
+**An example: (ET|CST|MT|...)?**
 
 **Replace <timeregex> with the relevant time regex you see below or whatever...**
 
